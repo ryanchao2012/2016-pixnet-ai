@@ -4,7 +4,7 @@ from slackbot.bot import listen_to
 import os.path
 import re, json, random
 from datetime import datetime
-
+# rmate test
 CURRENT_TIME = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
 
 # @respond_to('DEBUG')
