@@ -1,0 +1,3 @@
+[submodule "submodule/smttoktag"]
+	path = submodule/smttoktag
+	url = https://github.com/d2207197/smttoktag.git
