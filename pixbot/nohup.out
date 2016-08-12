@@ -1,0 +1,19 @@
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 1.163 seconds.
+Prefix dict has been built succesfully.
+Exception in websocket_safe_read: [Errno 11] Resource temporarily unavailable
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 1.362 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 1.178 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 1.163 seconds.
+Prefix dict has been built succesfully.
+lost websocket connection, try to reconnect now
+reconnected to slack rtm websocket

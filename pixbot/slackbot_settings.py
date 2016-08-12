@@ -3,11 +3,12 @@ from slackbot.bot import respond_to
 from slackbot.bot import listen_to
 from pix_crawler import *
 import os.path
-import re, json, random
+import re, json, random, time
 from datetime import datetime
 # rmate test
 CURRENT_TIME = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
-
+CHANNEL_ID = "C1QQG5SJG"
+PIX_INSPECTOR = "U1QDCHJ3H"
 # @respond_to('DEBUG')
 # def debug(message):
 #     message.send(u"<@{}>: {}{}".format(MR_ROBOT_ID, message, u'\U0001F601'))
@@ -28,7 +29,7 @@ def receive_question(message, question):
             f.write('\n')
         ans = crawler.fast_search()
         if ans != None:
-            print(ans)
+            print(no, ans)
             ANSWER_LIST.append((no, OPTION_LIST[ans[0]]))
         else:
             print("crawler failed: " + no)
@@ -47,6 +48,7 @@ def receive_question(message, question):
 @listen_to(r'正確答案是：(.*)')
 def collect_answer(message, answer):
     global CURRENT_TIME
+    ANSWER_LIST[:] = []
     if message._client.users[message._get_user_id()]['name'] == "pix_inspector":
         with open('question_samples/' + CURRENT_TIME + '.txt', 'a') as f:
             f.write(answer)
@@ -62,6 +64,7 @@ def hello_send(message):
     # message.send('ANS:')
     if message._client.users[message._get_user_id()]['name'] == "pix_quizmaster":
         reply_ans = ""
+        while(len(ANSWER_LIST) == 0): time.sleep(0.01)
         for idx, ans in ANSWER_LIST:
             reply_ans += str(idx) + " : " + ans + ", "
         message.send("<@%s>: %s %s" % (PIX_INSPECTOR, '請給分 ', reply_ans[:-2]))

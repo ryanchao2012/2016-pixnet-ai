@@ -29,7 +29,7 @@ class GoogleCrawler(object):
         self.wlist = wlist
         self.iqlist = qidx
         self.anslist = anslist
-        self.qnum = 1
+        self.qnum = 2
         self.rand_query = []
         self.set_rand_query()
     
@@ -74,7 +74,7 @@ class GoogleCrawler(object):
         html_pool = ''
         for q in self.rand_query:
             html_pool += self.crawl(q)
-            time.sleep(0.1)
+            time.sleep(0.5)
         for x in self.anslist:
             if html_pool.find(x) > 0:
                 return (self.anslist.index(x), x)
