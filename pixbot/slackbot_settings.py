@@ -30,6 +30,9 @@ def receive_question(message, question):
         if ans != None:
             print(ans)
             ANSWER_LIST.append((no, OPTION_LIST[ans[0]]))
+        else:
+            print("crawler failed: " + no)
+            ANSWER_LIST.append((no, random.choice(OPTION_LIST)))
 
     #     m = re.search(r'\[(\d+)\] (.*) ### (.*) \[END\]', question)
     #     quiz_no = int(m.group(1))
@@ -57,10 +60,10 @@ def collect_answer(message, answer):
 @listen_to(r'機器人小朋友請搶答$')
 def hello_send(message):
     # message.send('ANS:')
-    if message._client.users[message._get_user_id()]['name'] == "quizmaster":
+    if message._client.users[message._get_user_id()]['name'] == "pix_quizmaster":
         reply_ans = ""
-        for idx, ans in enumerate(ANSWER_LIST):
-            reply_ans += str(idx + 1) + " : " + ans + ", "
+        for idx, ans in ANSWER_LIST:
+            reply_ans += str(idx) + " : " + ans + ", "
         message.send("<@%s>: %s %s" % (PIX_INSPECTOR, '請給分 ', reply_ans[:-2]))
         ANSWER_LIST[:] = []
     
