@@ -1,12 +1,15 @@
 import kenlm
 from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
 from smttoktag import ZhTokTagger, KenLM, PyTablesTM
-
+from string import ascii_lowercase
 zhseg_lm = KenLM('/pix/zh-seg.barpa')
+zhtag_lm = KenLM('/pix/smttoktag/tag.blm')
 
-def lmscore(sent):
-    return zhseg_lm[sent]
-    
+def lmscore(toked_sents):
+    scores = list(map(lambda sent: zhseg_lm[sent] ,toked_sents))
+    top_score_choice = max(list(zip(scores, ascii_lowercase)))[1]
+    return top_score_choice
+      
 
 def gen_answer_sentences(question, answer_choices):
     for choice in answer_choices:
@@ -15,6 +18,7 @@ def gen_answer_sentences(question, answer_choices):
     
 
 if __name__ == '__main__':
+    
     toktagger = ZhTokTagger(
         tm=PyTablesTM('/pix/smttoktag/toktag.phrasetable.h5'),
         lm=KenLM('/pix/smttoktag/tag.blm'))
@@ -25,11 +29,12 @@ if __name__ == '__main__':
     test_question = '一年沒再踏入︽⊙＿⊙︽，這裡變化真的相當多，不知道下次再踏入這塊土地，是否又會有不一樣的感覺呢'
 
     test_answer_choices =  '墾丁','涼拌菜', '邊框', '生田', '金金'
+    import time
+    start_time = time.time()
+    
 
     sents = gen_answer_sentences(test_question, test_answer_choices)
     seginfos = list(map(toktagger, sents))
-    import time
-    start_time = time.time()
     scores = list(map(lambda seginfo: zhseg_lm(seginfo.zh_seg), seginfos))
     elapsed_time = time.time() - start_time
     print('elapsed: ', elapsed_time)
