@@ -34,10 +34,12 @@ def strmatch(sents):
 
 import subprocess
 def grepsents(sents):
-    return first(choice for sent, choice in zip(sents, ascii_lowercase)
-                 if subprocess.run(['grep', '-Fl', sent, '/pix/zh-all.txt'
-                                   ]).returncode == 0)
-
+    for sent, choice in zip(sents, ascii_lowercase):
+        if subprocess.run(['grep', '-Fl', sent, '/pix/zh-all.txt'
+                                   ]).returncode == 0:
+            return choice
+    return -1
+    
 
 def grep_question(question):
     pre_str, post_str, *_ = question.split('︽⊙＿⊙︽')
@@ -47,7 +49,7 @@ def grep_question(question):
 
 
 if __name__ == '__main__':
-    test_question = '一年沒再踏入︽⊙＿⊙︽，這裡變化真的相當多，不知道下次再踏入這塊土地，是否又會有不一樣的感覺呢'
+    test_question = '一年沒再踏入U︽⊙＿⊙︽，這裡變化真的相當多，不知道下次再踏入這塊土地，是否又會有不一樣的感覺呢'
     test_answer_choices = '涼拌菜', '邊框', '生田', '金金', '墾丁'
     start_time = time.time()
     sents = gen_answer_sentences(test_question, test_answer_choices)
