@@ -4,10 +4,20 @@ from smttoktag import ZhTokTagger, KenLM, PyTablesTM
 from string import ascii_lowercase
 zhseg_lm = KenLM('/pix/zh-seg.barpa')
 zhtag_lm = KenLM('/pix/smttoktag/tag.blm')
+zhseg_simple_lm = KenLM('/pix/zh-simple-seg.barpa')
+from zh_simple_tok import simple_seg
 
 def lmscore(toked_sents):
     scores = list(map(lambda sent: zhseg_lm[sent] ,toked_sents))
     top_score_choice = max(list(zip(scores, ascii_lowercase)))[1]
+    return top_score_choice
+
+def lmscore_simple(sents):
+    scores = []
+    for sent in sents:
+        toked_sent = ' '.join(simple_seg(sent))
+        scores.append(zhseg_simple_lm[toked_sent])
+    top_score_choice = max(zip(scores, ascii_lowercase))[1]
     return top_score_choice
       
 
@@ -28,12 +38,12 @@ if __name__ == '__main__':
 
     test_question = '一年沒再踏入︽⊙＿⊙︽，這裡變化真的相當多，不知道下次再踏入這塊土地，是否又會有不一樣的感覺呢'
 
-    test_answer_choices =  '墾丁','涼拌菜', '邊框', '生田', '金金'
+    test_answer_choices =  '涼拌菜', '墾丁', '邊框', '生田', '金金'
     import time
     start_time = time.time()
     
 
-    sents = gen_answer_sentences(test_question, test_answer_choices)
+    sents = list(gen_answer_sentences(test_question, test_answer_choices))
     seginfos = list(map(toktagger, sents))
     scores = list(map(lambda seginfo: zhseg_lm(seginfo.zh_seg), seginfos))
     elapsed_time = time.time() - start_time
@@ -49,4 +59,4 @@ if __name__ == '__main__':
     print('winner:', max(zip(scores, test_answer_choices)))
 
 
-
+    print(lmscore_simple(sents))
