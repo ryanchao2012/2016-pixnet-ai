@@ -1,0 +1,1 @@
+../lmscore-experiment/zh_simple_tok.py

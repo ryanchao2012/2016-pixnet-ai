@@ -1,0 +1,30 @@
+[2016-08-13 04:26:10,544: WARNING/MainProcess] /usr/local/lib/python3.5/dist-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+[2016-08-13 04:26:10,574: WARNING/Worker-1] init
+[2016-08-13 04:26:10,605: WARNING/Worker-2] init
+[2016-08-13 04:26:10,635: WARNING/Worker-3] init
+[2016-08-13 04:26:10,668: WARNING/Worker-4] init
+[2016-08-13 04:26:10,701: WARNING/Worker-5] init
+[2016-08-13 04:26:10,735: WARNING/Worker-6] init
+[2016-08-13 04:26:10,767: WARNING/Worker-7] init
+[2016-08-13 04:26:10,800: WARNING/Worker-8] init
+[2016-08-13 04:26:10,832: WARNING/Worker-9] init
+[2016-08-13 04:26:10,863: WARNING/Worker-10] init
+[2016-08-13 04:26:11,899: WARNING/MainProcess] celery@ip-10-26-129-113 ready.

@@ -4,7 +4,7 @@ from slackbot_settings import *
 import os
 
 settings.API_TOKEN = os.environ['PIX_BOT']
-settings.DEFAULT_REPLY = ""
+# settings.DEFAULT_REPLY = ""
 
 def main():
     bot = Bot()

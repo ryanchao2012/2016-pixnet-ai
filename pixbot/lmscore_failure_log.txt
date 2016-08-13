@@ -1,0 +1,6 @@
+[sample][5] 我拿我另一款︽⊙＿⊙︽手拿包來示範、實驗，也真的是有點髒了，別看它是黑色，我買了幾個︽⊙＿⊙︽手拿包，就它最難照顧，三不五時都要清潔一下，因為它是光滑羊皮，很容易沾染以及紋路等 ...，看起來就會很髒、很霧、不夠亮，所以一定要一直清，我現在也真的知道，為什麼大家都不買︽⊙＿⊙︽光滑面的包包，都要買個什麼荔枝皮等 ...，因為真的也是照顧很費工 	### a: 單價, b: chanel, c: neogence, d: 手部保養, e: 主色 [END][yh]c[y]b
+[sample][3] c︽⊙＿⊙︽elle、simone pérèle、princesses tam.tam、aubade這幾個也是我很愛的法國品 	### a: hant, b: 一星, c: jacobs, d: 藍晒圖, e: visee [END][yh]c[y]a
+[sample][5] 代購購買時還︽⊙＿⊙︽我說只剩一個而已，搞得我好緊張，因為她說差點就被後面的大陸人搶走 	### a: 客邦, b: 歐恩伊, c: 泰迪熊, d: line, e: kanebo [END][yh]e[y]d
+[sample][3] 而開架的話，媚比琳&amp;︽⊙＿⊙︽的，還有lavshuca~還有za的唇膏我也都蠻推 	### a: 豆沙, b: integrate, c: 倩碧水磁場, d: oversized, e: 刷哥 [END][yh]d[y]b
+[sample][4] 然後在下眼皮的部分加上臥蠶，使用的是我最愛的too cool for school的︽⊙＿⊙︽ 	### a: 法國名牌, b: 乳狀, c: burberry, d: 圓牌, e: 眼線筆 [END][yh]c[y]e
+[sample][4] 比起#petal ︽⊙＿⊙︽顏色更紅一點、橙一點、珊瑚一點，飽和度更好，但同樣是暖色的呈現，如果想要更存在感的色調，但又是比較安全一點的，就可以參考這個#coral reef，柔嫩粉彩的珊瑚色調 	### a: 實搭性, b: pink, c: 蛋肌, d: diptyque, e: derma [END][yh]e[y]b

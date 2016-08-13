@@ -17,3 +17,431 @@ Loading model cost 1.163 seconds.
 Prefix dict has been built succesfully.
 lost websocket connection, try to reconnect now
 reconnected to slack rtm websocket
+lost websocket connection, try to reconnect now
+reconnected to slack rtm websocket
+failed to handle message 題目 [4] 我們當天到達『新驛旅店』已經是晚上九點多了，附近算是挺熱鬧的，離『新時代購物中心』也很近。我覺得如果要玩『︽⊙＿⊙ 	### a: 小梅, b: 台中, c: 張照, d: 新宿, e: 計時 [END] with plugin "receive_question"
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/random.py", line 253, in choice
+    i = self._randbelow(len(seq))
+  File "/usr/lib/python3.5/random.py", line 230, in _randbelow
+    r = getrandbits(k)          # 0 <= r < 2**k
+ValueError: number of bits must be greater than zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/slackbot/dispatcher.py", line 55, in _dispatch_msg_handler
+    func(Message(self._client, msg), *args)
+  File "/home/ryan/2016-pixnet-ai/pixbot/slackbot_settings.py", line 26, in receive_question
+    crawler = GoogleCrawler(no, wlist, qidx, anslist)
+  File "/home/ryan/2016-pixnet-ai/pixbot/pix_crawler.py", line 34, in __init__
+    self.set_rand_query()
+  File "/home/ryan/2016-pixnet-ai/pixbot/pix_crawler.py", line 56, in set_rand_query
+    self.add_rand_query()
+  File "/home/ryan/2016-pixnet-ai/pixbot/pix_crawler.py", line 43, in add_rand_query
+    iq = random.choice(qidx)
+  File "/usr/lib/python3.5/random.py", line 255, in choice
+    raise IndexError('Cannot choose from an empty sequence')
+IndexError: Cannot choose from an empty sequence
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 1.180 seconds.
+Prefix dict has been built succesfully.
+failed to handle message 題目 [7] 後來我只好非常認真的早晚都保養，外加偶爾還會宵夜濕敷個經典有機植萃系列︽⊙＿⊙ 	### a: 蔻蘿蘭, b: 化妝水, c: holika, d: 紋路, e: 水腫 [END] with plugin "receive_question"
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/slackbot/dispatcher.py", line 55, in _dispatch_msg_handler
+    func(Message(self._client, msg), *args)
+  File "/home/ryan/2016-pixnet-ai/pixbot/slackbot_settings.py", line 34, in receive_question
+    ans = crawler.fast_search()
+UnboundLocalError: local variable 'crawler' referenced before assignment
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 1.366 seconds.
+Prefix dict has been built succesfully.
+[2016-08-13 05:19:04,969] WARNING:start
+[2016-08-13 05:19:04,969] WARNING:start
+[2016-08-13 05:19:05,006] WARNING:apply
+[2016-08-13 05:19:05,008] WARNING:apply
+[2016-08-13 05:19:05,063] WARNING:end
+[2016-08-13 05:19:05,063] WARNING:elapsed: 0.09449458122253418
+[2016-08-13 05:19:05,065] WARNING:end
+[2016-08-13 05:19:05,065] WARNING:elapsed: 0.09595584869384766
+[2016-08-13 05:19:05,971] WARNING:start
+[2016-08-13 05:19:05,972] WARNING:start
+[2016-08-13 05:19:05,972] WARNING:start
+[2016-08-13 05:19:05,984] WARNING:apply
+[2016-08-13 05:19:05,989] WARNING:apply
+[2016-08-13 05:19:05,992] WARNING:apply
+[2016-08-13 05:19:06,975] WARNING:start
+[2016-08-13 05:19:06,978] WARNING:start
+[2016-08-13 05:19:06,978] WARNING:start
+[2016-08-13 05:19:07,028] WARNING:apply
+[2016-08-13 05:19:07,031] WARNING:apply
+[2016-08-13 05:19:07,039] WARNING:apply
+[2016-08-13 05:19:07,979] WARNING:start
+[2016-08-13 05:19:07,979] WARNING:start
+[2016-08-13 05:19:08,017] WARNING:apply
+[2016-08-13 05:19:08,017] WARNING:apply
+[2016-08-13 05:19:09,241] WARNING:end
+[2016-08-13 05:19:09,242] WARNING:elapsed: 3.2697548866271973
+[2016-08-13 05:19:09,959] WARNING:end
+[2016-08-13 05:19:09,959] WARNING:elapsed: 2.984388589859009
+[2016-08-13 05:19:09,997] WARNING:end
+[2016-08-13 05:19:09,997] WARNING:elapsed: 4.025619029998779
+[2016-08-13 05:19:10,007] WARNING:end
+[2016-08-13 05:19:10,007] WARNING:elapsed: 3.028801202774048
+[2016-08-13 05:19:12,069] WARNING:end
+[2016-08-13 05:19:12,069] WARNING:elapsed: 6.096926689147949
+[2016-08-13 05:19:12,071] WARNING:end
+[2016-08-13 05:19:12,071] WARNING:elapsed: 5.093164682388306
+[2016-08-13 05:19:14,282] WARNING:end
+[2016-08-13 05:19:14,282] WARNING:elapsed: 6.303837776184082
+[2016-08-13 05:19:14,735] WARNING:end
+[2016-08-13 05:19:14,735] WARNING:elapsed: 6.7561280727386475
+[2016-08-13 05:31:13,864] WARNING:start
+[2016-08-13 05:31:13,864] WARNING:start
+[2016-08-13 05:31:13,864] WARNING:start
+[2016-08-13 05:31:13,869] WARNING:apply
+[2016-08-13 05:31:13,877] WARNING:apply
+[2016-08-13 05:31:13,877] WARNING:apply
+[2016-08-13 05:31:13,977] WARNING:end
+[2016-08-13 05:31:13,977] WARNING:elapsed: 0.11339139938354492
+[2016-08-13 05:31:13,983] WARNING:end
+[2016-08-13 05:31:13,983] WARNING:elapsed: 0.1185462474822998
+[2016-08-13 05:31:14,459] WARNING:end
+[2016-08-13 05:31:14,459] WARNING:elapsed: 0.5947613716125488
+[2016-08-13 05:31:14,867] WARNING:start
+[2016-08-13 05:31:14,867] WARNING:start
+[2016-08-13 05:31:14,867] WARNING:start
+[2016-08-13 05:31:14,877] WARNING:apply
+[2016-08-13 05:31:14,878] WARNING:apply
+[2016-08-13 05:31:14,879] WARNING:apply
+[2016-08-13 05:31:15,707] WARNING:end
+[2016-08-13 05:31:15,708] WARNING:elapsed: 0.8406670093536377
+[2016-08-13 05:31:15,870] WARNING:start
+[2016-08-13 05:31:15,871] WARNING:start
+[2016-08-13 05:31:15,877] WARNING:apply
+[2016-08-13 05:31:15,878] WARNING:start
+[2016-08-13 05:31:15,881] WARNING:apply
+[2016-08-13 05:31:15,885] WARNING:apply
+[2016-08-13 05:31:16,751] WARNING:end
+[2016-08-13 05:31:16,752] WARNING:elapsed: 0.8814504146575928
+[2016-08-13 05:31:16,872] WARNING:start
+[2016-08-13 05:31:16,875] WARNING:apply
+[2016-08-13 05:31:17,736] WARNING:end
+[2016-08-13 05:31:17,737] WARNING:elapsed: 2.869798183441162
+[2016-08-13 05:31:18,155] WARNING:end
+[2016-08-13 05:31:18,155] WARNING:elapsed: 2.2777857780456543
+[2016-08-13 05:31:18,157] WARNING:end
+[2016-08-13 05:31:18,158] WARNING:elapsed: 1.285555362701416
+[2016-08-13 05:31:18,160] WARNING:end
+[2016-08-13 05:31:18,160] WARNING:elapsed: 3.2933647632598877
+[2016-08-13 05:31:18,309] WARNING:end
+[2016-08-13 05:31:18,309] WARNING:elapsed: 2.4384829998016357
+[2016-08-13 05:35:43,212] WARNING:start
+[2016-08-13 05:35:43,213] WARNING:start
+[2016-08-13 05:35:43,219] WARNING:apply
+[2016-08-13 05:35:43,219] WARNING:apply
+[2016-08-13 05:35:44,220] WARNING:start
+[2016-08-13 05:35:44,220] WARNING:start
+[2016-08-13 05:35:44,220] WARNING:start
+[2016-08-13 05:35:44,228] WARNING:apply
+[2016-08-13 05:35:44,230] WARNING:apply
+[2016-08-13 05:35:44,233] WARNING:apply
+[2016-08-13 05:35:45,199] WARNING:end
+[2016-08-13 05:35:45,199] WARNING:elapsed: 1.9868395328521729
+[2016-08-13 05:35:45,225] WARNING:start
+[2016-08-13 05:35:45,226] WARNING:start
+[2016-08-13 05:35:45,226] WARNING:start
+[2016-08-13 05:35:45,235] WARNING:apply
+[2016-08-13 05:35:45,239] WARNING:apply
+[2016-08-13 05:35:45,240] WARNING:apply
+[2016-08-13 05:35:46,229] WARNING:start
+[2016-08-13 05:35:46,230] WARNING:start
+[2016-08-13 05:35:46,244] WARNING:apply
+[2016-08-13 05:35:46,254] WARNING:apply
+[2016-08-13 05:35:46,758] WARNING:end
+[2016-08-13 05:35:46,758] WARNING:elapsed: 3.5454635620117188
+[2016-08-13 05:35:47,197] WARNING:end
+[2016-08-13 05:35:47,197] WARNING:elapsed: 1.9719316959381104
+[2016-08-13 05:35:47,203] WARNING:end
+[2016-08-13 05:35:47,203] WARNING:elapsed: 2.983203411102295
+[2016-08-13 05:35:47,222] WARNING:end
+[2016-08-13 05:35:47,222] WARNING:elapsed: 1.9963912963867188
+[2016-08-13 05:35:47,857] WARNING:end
+[2016-08-13 05:35:47,857] WARNING:elapsed: 1.6276249885559082
+[2016-08-13 05:35:48,421] WARNING:end
+[2016-08-13 05:35:48,421] WARNING:elapsed: 4.201505422592163
+[2016-08-13 05:35:48,436] WARNING:end
+[2016-08-13 05:35:48,436] WARNING:elapsed: 4.2158894538879395
+[2016-08-13 05:35:48,621] WARNING:end
+[2016-08-13 05:35:48,622] WARNING:elapsed: 3.3957793712615967
+[2016-08-13 05:35:49,072] WARNING:end
+[2016-08-13 05:35:49,072] WARNING:elapsed: 2.8428752422332764
+[2016-08-13 05:43:21,794] WARNING:start
+[2016-08-13 05:43:21,795] WARNING:start
+[2016-08-13 05:43:21,795] WARNING:start
+[2016-08-13 05:43:21,803] WARNING:apply
+[2016-08-13 05:43:21,805] WARNING:apply
+[2016-08-13 05:43:21,805] WARNING:apply
+[2016-08-13 05:43:22,352] WARNING:end
+[2016-08-13 05:43:22,352] WARNING:elapsed: 0.5575742721557617
+[2016-08-13 05:43:22,412] WARNING:end
+[2016-08-13 05:43:22,413] WARNING:elapsed: 0.6180675029754639
+[2016-08-13 05:43:22,796] WARNING:start
+[2016-08-13 05:43:22,800] WARNING:apply
+[2016-08-13 05:43:23,686] WARNING:end
+[2016-08-13 05:43:23,686] WARNING:elapsed: 0.8897609710693359
+[2016-08-13 05:43:23,799] WARNING:start
+[2016-08-13 05:43:23,799] WARNING:start
+[2016-08-13 05:43:23,806] WARNING:apply
+[2016-08-13 05:43:23,808] WARNING:apply
+[2016-08-13 05:43:24,315] WARNING:end
+[2016-08-13 05:43:24,315] WARNING:elapsed: 2.519941806793213
+[2016-08-13 05:43:24,326] WARNING:end
+[2016-08-13 05:43:24,327] WARNING:elapsed: 0.5276293754577637
+[2016-08-13 05:43:24,803] WARNING:start
+[2016-08-13 05:43:24,803] WARNING:start
+[2016-08-13 05:43:24,804] WARNING:start
+[2016-08-13 05:43:24,811] WARNING:apply
+[2016-08-13 05:43:24,814] WARNING:apply
+[2016-08-13 05:43:24,816] WARNING:apply
+[2016-08-13 05:43:25,806] WARNING:start
+[2016-08-13 05:43:25,811] WARNING:apply
+[2016-08-13 05:43:30,256] WARNING:end
+[2016-08-13 05:43:30,256] WARNING:elapsed: 6.456794500350952
+[2016-08-13 05:43:31,143] WARNING:end
+[2016-08-13 05:43:31,144] WARNING:elapsed: 6.3406736850738525
+[2016-08-13 05:43:31,406] WARNING:end
+[2016-08-13 05:43:31,406] WARNING:elapsed: 6.602546691894531
+[2016-08-13 05:43:31,432] WARNING:end
+[2016-08-13 05:43:31,432] WARNING:elapsed: 6.6291162967681885
+[2016-08-13 05:43:32,600] WARNING:end
+[2016-08-13 05:43:32,600] WARNING:elapsed: 6.795008897781372
+[2016-08-13 05:47:31,118] WARNING:start
+[2016-08-13 05:47:31,121] WARNING:apply
+[2016-08-13 05:47:31,569] WARNING:end
+[2016-08-13 05:47:31,569] WARNING:elapsed: 0.4502575397491455
+[2016-08-13 05:47:32,121] WARNING:start
+[2016-08-13 05:47:32,121] WARNING:start
+[2016-08-13 05:47:32,126] WARNING:apply
+[2016-08-13 05:47:32,128] WARNING:apply
+[2016-08-13 05:47:32,562] WARNING:end
+[2016-08-13 05:47:32,562] WARNING:elapsed: 0.4414641857147217
+[2016-08-13 05:47:33,123] WARNING:start
+[2016-08-13 05:47:33,123] WARNING:start
+[2016-08-13 05:47:33,128] WARNING:apply
+[2016-08-13 05:47:33,130] WARNING:apply
+[2016-08-13 05:47:34,126] WARNING:start
+[2016-08-13 05:47:34,127] WARNING:start
+[2016-08-13 05:47:34,127] WARNING:start
+[2016-08-13 05:47:34,127] WARNING:start
+[2016-08-13 05:47:34,141] WARNING:apply
+[2016-08-13 05:47:34,141] WARNING:apply
+[2016-08-13 05:47:34,142] WARNING:apply
+[2016-08-13 05:47:34,144] WARNING:apply
+[2016-08-13 05:47:34,368] WARNING:end
+[2016-08-13 05:47:34,368] WARNING:elapsed: 0.24161767959594727
+[2016-08-13 05:47:34,445] WARNING:end
+[2016-08-13 05:47:34,445] WARNING:elapsed: 0.3184962272644043
+[2016-08-13 05:47:35,128] WARNING:start
+[2016-08-13 05:47:35,133] WARNING:apply
+[2016-08-13 05:47:35,233] WARNING:end
+[2016-08-13 05:47:35,233] WARNING:elapsed: 2.109339475631714
+[2016-08-13 05:47:35,238] WARNING:end
+[2016-08-13 05:47:35,238] WARNING:elapsed: 3.11676025390625
+[2016-08-13 05:47:35,251] WARNING:end
+[2016-08-13 05:47:35,251] WARNING:elapsed: 1.1243910789489746
+[2016-08-13 05:47:35,304] WARNING:end
+[2016-08-13 05:47:35,304] WARNING:elapsed: 2.180964946746826
+[2016-08-13 05:47:35,557] WARNING:end
+[2016-08-13 05:47:35,557] WARNING:elapsed: 1.4301884174346924
+[2016-08-13 05:47:36,500] WARNING:end
+[2016-08-13 05:47:36,500] WARNING:elapsed: 1.3722200393676758
+[2016-08-13 05:51:28,425] WARNING:start
+[2016-08-13 05:51:28,428] WARNING:apply
+[2016-08-13 05:51:28,484] WARNING:end
+[2016-08-13 05:51:28,484] WARNING:elapsed: 0.059478044509887695
+[2016-08-13 05:52:52,530] WARNING:start
+[2016-08-13 05:52:52,533] WARNING:apply
+[2016-08-13 05:52:52,588] WARNING:end
+[2016-08-13 05:52:52,589] WARNING:elapsed: 0.058559417724609375
+python3.5: can't open file 'run.p': [Errno 2] No such file or directory
+[2016-08-13 06:31:58,602] WARNING:start
+[2016-08-13 06:31:58,603] WARNING:start
+[2016-08-13 06:31:58,603] WARNING:start
+[2016-08-13 06:31:59,605] WARNING:start
+[2016-08-13 06:31:59,605] WARNING:start
+[2016-08-13 06:31:59,606] WARNING:start
+[2016-08-13 06:32:00,240] WARNING:apply
+[2016-08-13 06:32:00,247] WARNING:apply
+[2016-08-13 06:32:00,303] WARNING:apply
+[2016-08-13 06:32:00,303] WARNING:apply
+[2016-08-13 06:32:00,317] WARNING:apply
+[2016-08-13 06:32:00,318] WARNING:apply
+[2016-08-13 06:32:00,608] WARNING:start
+[2016-08-13 06:32:00,608] WARNING:start
+[2016-08-13 06:32:00,693] WARNING:apply
+[2016-08-13 06:32:00,716] WARNING:apply
+[2016-08-13 06:32:01,610] WARNING:start
+[2016-08-13 06:32:01,611] WARNING:start
+[2016-08-13 06:32:01,617] WARNING:apply
+[2016-08-13 06:32:01,624] WARNING:apply
+[2016-08-13 06:32:06,265] WARNING:end
+[2016-08-13 06:32:06,265] WARNING:elapsed: 6.659796237945557
+[2016-08-13 06:32:20,315] WARNING:end
+[2016-08-13 06:32:20,315] WARNING:elapsed: 20.71044898033142
+[2016-08-13 06:32:40,143] WARNING:end
+[2016-08-13 06:32:41,546] WARNING:end
+[2016-08-13 06:32:41,631] WARNING:end
+[2016-08-13 06:32:41,631] WARNING:end
+[2016-08-13 06:32:41,631] WARNING:elapsed: 41.02284073829651
+[2016-08-13 06:32:41,632] WARNING:end
+[2016-08-13 06:32:41,633] WARNING:elapsed: 43.0305061340332
+[2016-08-13 06:32:41,633] WARNING:elapsed: 43.03045177459717
+[2016-08-13 06:32:41,634] WARNING:end
+[2016-08-13 06:32:41,634] WARNING:elapsed: 42.028645515441895
+[2016-08-13 06:32:45,425] WARNING:end
+[2016-08-13 06:32:45,961] WARNING:elapsed: 47.35845136642456
+[2016-08-13 06:32:45,962] WARNING:end
+[2016-08-13 06:32:53,336] WARNING:elapsed: 51.7255916595459
+[2016-08-13 06:33:01,302] WARNING:elapsed: 60.69356036186218
+[2016-08-13 06:33:01,391] WARNING:elapsed: 59.780282974243164
+[2016-08-13 06:36:06,535] WARNING:start
+[2016-08-13 06:36:06,538] WARNING:apply
+[2016-08-13 06:36:07,539] WARNING:start
+[2016-08-13 06:36:07,544] WARNING:apply
+[2016-08-13 06:36:07,545] WARNING:start
+[2016-08-13 06:36:07,548] WARNING:apply
+[2016-08-13 06:36:07,549] WARNING:start
+[2016-08-13 06:36:07,551] WARNING:apply
+[2016-08-13 06:36:08,543] WARNING:start
+[2016-08-13 06:36:08,548] WARNING:apply
+[2016-08-13 06:36:08,544] WARNING:start
+[2016-08-13 06:36:08,544] WARNING:start
+[2016-08-13 06:36:08,556] WARNING:apply
+[2016-08-13 06:36:08,552] WARNING:apply
+[2016-08-13 06:36:08,630] WARNING:end
+[2016-08-13 06:36:08,630] WARNING:elapsed: 1.091564416885376
+[2016-08-13 06:36:09,547] WARNING:start
+[2016-08-13 06:36:09,547] WARNING:start
+[2016-08-13 06:36:09,552] WARNING:apply
+[2016-08-13 06:36:09,559] WARNING:apply
+[2016-08-13 06:36:09,560] WARNING:start
+[2016-08-13 06:36:09,564] WARNING:apply
+[2016-08-13 06:36:10,421] WARNING:end
+[2016-08-13 06:36:10,421] WARNING:elapsed: 3.8861377239227295
+[2016-08-13 06:36:10,585] WARNING:end
+[2016-08-13 06:36:10,589] WARNING:elapsed: 3.0442471504211426
+[2016-08-13 06:36:10,690] WARNING:end
+[2016-08-13 06:36:10,690] WARNING:elapsed: 3.141080379486084
+[2016-08-13 06:36:10,766] WARNING:end
+[2016-08-13 06:36:10,766] WARNING:elapsed: 2.2230725288391113
+[2016-08-13 06:36:11,339] WARNING:end
+[2016-08-13 06:36:11,339] WARNING:elapsed: 2.7951765060424805
+[2016-08-13 06:36:11,490] WARNING:end
+[2016-08-13 06:36:11,490] WARNING:elapsed: 1.9426307678222656
+[2016-08-13 06:36:12,569] WARNING:end
+[2016-08-13 06:36:12,569] WARNING:elapsed: 4.025559663772583
+[2016-08-13 06:36:12,968] WARNING:end
+[2016-08-13 06:36:12,968] WARNING:elapsed: 3.4213979244232178
+[2016-08-13 06:36:13,026] WARNING:end
+[2016-08-13 06:36:13,026] WARNING:elapsed: 3.466327428817749
+[2016-08-13 06:42:59,328] WARNING:start
+[2016-08-13 06:42:59,363] WARNING:apply
+[2016-08-13 06:42:59,418] WARNING:end
+[2016-08-13 06:42:59,418] WARNING:elapsed: 0.0894777774810791
+/pix/zh-all.txt
+/pix/zh-all.txt
+/pix/zh-all.txt
+[2016-08-13 06:44:10,346] ERROR:failed to handle message 題目 [3] 而且這次還想去一些沒去過的地方，該說︽⊙＿⊙︽怎麼有那麼多的地方　實在太適合兩天一夜的小旅行 	### a: 情商, b: 台南, c: 遊戲, d: 寰宇, e: 長鏈 [END] with plugin "receive_question"
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/slackbot/dispatcher.py", line 55, in _dispatch_msg_handler
+    func(Message(self._client, msg), *args)
+  File "/home/ryan/2016-pixnet-ai/pixbot/slackbot_settings.py", line 75, in receive_question
+    print("strmatch failed: " + q_no)
+TypeError: Can't convert 'int' object to str implicitly
+[2016-08-13 06:44:11,346] ERROR:failed to handle message 題目 [5] 我們當天到達『新驛旅店』已經是晚上九點多了，附近算是挺熱鬧的，離『新時代購物中心』也很近。我覺得如果要玩『︽⊙＿⊙ 	### a: 小梅, b: 台中, c: 張照, d: 新宿, e: 計時 [END] with plugin "receive_question"
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/slackbot/dispatcher.py", line 55, in _dispatch_msg_handler
+    func(Message(self._client, msg), *args)
+  File "/home/ryan/2016-pixnet-ai/pixbot/slackbot_settings.py", line 75, in receive_question
+    print("strmatch failed: " + q_no)
+TypeError: Can't convert 'int' object to str implicitly
+[2016-08-13 06:44:11,347] ERROR:failed to handle message 題目 [4] ︽⊙＿⊙︽ spade new york wedding belles emanuelle手 	### a: kate, b: 有素, c: 車身, d: 小樹, e: 糯米 [END] with plugin "receive_question"
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/slackbot/dispatcher.py", line 55, in _dispatch_msg_handler
+    func(Message(self._client, msg), *args)
+  File "/home/ryan/2016-pixnet-ai/pixbot/slackbot_settings.py", line 75, in receive_question
+    print("strmatch failed: " + q_no)
+TypeError: Can't convert 'int' object to str implicitly
+/pix/zh-all.txt
+/pix/zh-all.txt
+/pix/zh-all.txt
+[2016-08-13 06:44:13,386] ERROR:failed to handle message 題目 [9] 車上使用的是garmin的導航系統，如果是從家車帶的話可能來到︽⊙＿⊙︽也找不到路，這裡集結了︽⊙＿⊙︽所有熱門旅遊景點，就像我事先沒做太多功課，直接使用導航內的景點到處玩 	### a: 展館, b: 通化街夜市, c: 米亞丸, d: 竹南, e: 金門 [END] with plugin "receive_question"
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/slackbot/dispatcher.py", line 55, in _dispatch_msg_handler
+    func(Message(self._client, msg), *args)
+  File "/home/ryan/2016-pixnet-ai/pixbot/slackbot_settings.py", line 75, in receive_question
+    print("strmatch failed: " + q_no)
+TypeError: Can't convert 'int' object to str implicitly
+[2016-08-13 06:44:13,386] ERROR:failed to handle message 題目 [10] 蕃薯藤有機手工烘培就位於大溪tina廚房隔壁，幾位友人都給予蕃薯藤的有機麵包好評價，連遠在苗栗︽⊙＿⊙︽開民宿的前長官，都是採買這家的麵包來當客人的早餐點心 	### a: 安平港, b: 南庄, c: 筲箕, d: 村崗北路, e: 阿淳 [END] with plugin "receive_question"
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/slackbot/dispatcher.py", line 55, in _dispatch_msg_handler
+    func(Message(self._client, msg), *args)
+  File "/home/ryan/2016-pixnet-ai/pixbot/slackbot_settings.py", line 75, in receive_question
+    print("strmatch failed: " + q_no)
+TypeError: Can't convert 'int' object to str implicitly
+/pix/zh-all.txt
+/pix/zh-all.txt
+/pix/zh-all.txt
+[2016-08-13 07:00:38,447] WARNING:start
+[2016-08-13 07:00:38,472] WARNING:apply
+[2016-08-13 07:00:38,529] WARNING:end
+[2016-08-13 07:00:38,529] WARNING:elapsed: 0.08193111419677734
+[2016-08-13 07:00:39,532] WARNING:start
+[2016-08-13 07:00:39,532] WARNING:start
+[2016-08-13 07:00:39,532] WARNING:start
+[2016-08-13 07:00:39,554] WARNING:apply
+[2016-08-13 07:00:39,559] WARNING:apply
+[2016-08-13 07:00:39,579] WARNING:apply
+[2016-08-13 07:00:39,663] WARNING:end
+[2016-08-13 07:00:39,664] WARNING:elapsed: 0.13196706771850586
+[2016-08-13 07:00:39,665] WARNING:end
+[2016-08-13 07:00:39,665] WARNING:elapsed: 0.13306355476379395
+[2016-08-13 07:00:39,669] WARNING:end
+[2016-08-13 07:00:39,670] WARNING:elapsed: 0.13729619979858398
+/pix/zh-all.txt
+[2016-08-13 07:00:40,624] WARNING:start
+[2016-08-13 07:00:40,642] WARNING:apply
+[2016-08-13 07:00:40,711] WARNING:start
+[2016-08-13 07:00:40,715] WARNING:apply
+[2016-08-13 07:00:40,716] WARNING:end
+[2016-08-13 07:00:40,716] WARNING:elapsed: 0.09224510192871094
+[2016-08-13 07:00:40,787] WARNING:end
+[2016-08-13 07:00:40,787] WARNING:elapsed: 0.07610273361206055
+/pix/zh-all.txt
+/pix/zh-all.txt
+[2016-08-13 07:00:41,582] WARNING:start
+[2016-08-13 07:00:41,588] WARNING:apply
+[2016-08-13 07:00:41,640] WARNING:end
+[2016-08-13 07:00:41,640] WARNING:elapsed: 0.058650970458984375
+/pix/zh-all.txt
+[2016-08-13 07:00:42,462] WARNING:start
+[2016-08-13 07:00:42,466] WARNING:apply
+[2016-08-13 07:00:42,518] WARNING:end
+[2016-08-13 07:00:42,518] WARNING:elapsed: 0.056571245193481445
+[2016-08-13 07:00:42,527] WARNING:start
+[2016-08-13 07:00:42,530] WARNING:apply
+[2016-08-13 07:00:42,590] WARNING:end
+[2016-08-13 07:00:42,590] WARNING:elapsed: 0.06236624717712402
+/pix/zh-all.txt
+[2016-08-13 07:00:43,599] WARNING:start
+[2016-08-13 07:00:43,599] WARNING:start
+[2016-08-13 07:00:43,606] WARNING:apply
+[2016-08-13 07:00:43,608] WARNING:apply
+[2016-08-13 07:00:43,670] WARNING:end
+[2016-08-13 07:00:43,670] WARNING:elapsed: 0.07088971138000488
+[2016-08-13 07:00:43,682] WARNING:end
+[2016-08-13 07:00:43,682] WARNING:elapsed: 0.08402037620544434
+/pix/zh-all.txt
